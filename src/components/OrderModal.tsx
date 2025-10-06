@@ -9,7 +9,7 @@ interface OrderModalProps {
 
 export default function OrderModal({ product, onClose }: OrderModalProps) {
   const [quantity, setQuantity] = useState(1);
-  const phoneNumber = "94778901234";
+  const phoneNumber = "94761486871";
 
   useEffect(() => {
     const handleEsc = (event: KeyboardEvent) => {
