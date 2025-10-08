@@ -51,6 +51,7 @@ export default function Carousel() {
             index === currentIndex ? 'opacity-100' : 'opacity-0'
           }`}
         >
+          {/* ✨ FIX: Re-enabled this overlay for text readability */}
           <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/30 z-10" />
           <img
             src={image.url}

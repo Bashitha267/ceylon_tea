@@ -61,59 +61,58 @@ export default function Home({ onNavigate }: HomeProps) {
         </div>
       </section>
 
-      <section className="py-20  text-white">
-           <div 
-      className="min-h-screen bg-cover bg-center bg-fixed py-20 px-4 sm:px-6 lg:px-8 flex items-center justify-center"
-      style={{ backgroundImage: `url('https://res.cloudinary.com/dnfbik3if/image/upload/v1759811758/aboutus_dehj8p.jpg')` }}
-    >
-      <div className="bg-black/50 absolute inset-0"></div>
+      {/* This section contains the main fix */}
+      <section className="py-20 text-white">
+        {/* ✨ FIX: Added 'relative' to contain the absolute overlay */}
+        <div 
+          className="relative min-h-screen bg-cover bg-center bg-fixed py-20 px-4 sm:px-6 lg:px-8 flex items-center justify-center"
+          style={{ backgroundImage: `url('https://res.cloudinary.com/dnfbik3if/image/upload/v1759811758/aboutus_dehj8p.jpg')` }}
+        >
+          {/* This overlay now correctly covers only its parent div */}
+          <div className="bg-black/50 absolute inset-0"></div>
       
-      {/* Main container with the blur effect */}
-      <div className="relative max-w-7xl mx-auto bg-black/30 backdrop-blur-lg rounded-2xl border border-white/10 shadow-2xl overflow-hidden">
-        <div className="p-8 sm:p-12">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            
-            {/* Left Column: Text content */}
-            <div>
-              <h2 className="text-4xl md:text-5xl font-bold mb-6 font-serif text-white">About Us</h2>
-              <div className="w-24 h-1 bg-gradient-to-r from-green-500 to-green-300 mb-6"></div>
-              <p className="text-lg text-gray-200 mb-6 leading-relaxed">
-                Since 1985, Ceylon Tea Collection has been bringing the authentic taste of Sri Lankan tea
-                to tea lovers worldwide. Nestled in the heart of Nuwara Eliya's tea country, our family-owned
-                plantation combines generations of expertise with sustainable farming practices.
-              </p>
-              <p className="text-lg text-gray-200 mb-8 leading-relaxed">
-                We are committed to preserving traditional tea-making methods while embracing modern quality
-                standards. Every leaf is handpicked at the perfect moment, ensuring you receive only the
-                finest Ceylon tea.
-              </p>
-              <button
-                onClick={() => onNavigate('about')}
-                className="group bg-gradient-to-r from-green-600 to-green-500 text-white px-8 py-4 rounded-full font-semibold text-lg hover:from-green-500 hover:to-green-400 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 flex items-center justify-center space-x-2"
-              >
-                <span>Learn More</span>
-                <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
-              </button>
-            </div>
-            
-            {/* Right Column: Image with overlayed badge */}
-            <div className="relative mt-10 md:mt-0">
-              <img
-                src="https://res.cloudinary.com/dnfbik3if/image/upload/v1759752282/2148550453_lgozbe.jpg"
-                alt="Tea garden with workers"
-                className="rounded-2xl shadow-2xl w-full h-full object-cover"
-              />
-              <div className="absolute -bottom-6 -left-6 bg-black/40 backdrop-blur-lg text-white p-6 rounded-xl shadow-2xl border border-white/10">
-                <p className="text-4xl font-bold">38+</p>
-                <p className="text-sm font-semibold text-gray-300">Years of Excellence</p>
+          <div className="relative max-w-7xl mx-auto bg-black/30 backdrop-blur-lg rounded-2xl border border-white/10 shadow-2xl overflow-hidden">
+            <div className="p-8 sm:p-12">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                
+                <div>
+                  <h2 className="text-4xl md:text-5xl font-bold mb-6 font-serif text-white">About Us</h2>
+                  <div className="w-24 h-1 bg-gradient-to-r from-green-500 to-green-300 mb-6"></div>
+                  <p className="text-lg text-gray-200 mb-6 leading-relaxed">
+                    Since 1985, Ceylon Tea Collection has been bringing the authentic taste of Sri Lankan tea
+                    to tea lovers worldwide. Nestled in the heart of Nuwara Eliya's tea country, our family-owned
+                    plantation combines generations of expertise with sustainable farming practices.
+                  </p>
+                  <p className="text-lg text-gray-200 mb-8 leading-relaxed">
+                    We are committed to preserving traditional tea-making methods while embracing modern quality
+                    standards. Every leaf is handpicked at the perfect moment, ensuring you receive only the
+                    finest Ceylon tea.
+                  </p>
+                  <button
+                    onClick={() => onNavigate('about')}
+                    className="group bg-gradient-to-r from-green-600 to-green-500 text-white px-8 py-4 rounded-full font-semibold text-lg hover:from-green-500 hover:to-green-400 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 flex items-center justify-center space-x-2"
+                  >
+                    <span>Learn More</span>
+                    <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
+                  </button>
+                </div>
+                
+                <div className="relative mt-10 md:mt-0">
+                  <img
+                    src="https://res.cloudinary.com/dnfbik3if/image/upload/v1759752282/2148550453_lgozbe.jpg"
+                    alt="Tea garden with workers"
+                    className="rounded-2xl shadow-2xl w-full h-full object-cover"
+                  />
+                  <div className="absolute -bottom-6 -left-6 bg-black/40 backdrop-blur-lg text-white p-6 rounded-xl shadow-2xl border border-white/10">
+                    <p className="text-4xl font-bold">38+</p>
+                    <p className="text-sm font-semibold text-gray-300">Years of Excellence</p>
+                  </div>
+                </div>
+
               </div>
             </div>
-
           </div>
         </div>
-      </div>
-    </div>
-      
       </section>
 
       <section className="py-20 bg-white">
