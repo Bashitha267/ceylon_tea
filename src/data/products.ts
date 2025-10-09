@@ -3,74 +3,46 @@ import { Product } from '../types';
 export const products: Product[] = [
   {
     id: 1,
-    name: "Ceylon Green Tea",
-    description: "Pure organic green tea from the highlands of Sri Lanka. Rich in antioxidants and natural flavors.",
-    price: 12.99,
-    image: "https://images.pexels.com/photos/1638280/pexels-photo-1638280.jpeg?auto=compress&cs=tinysrgb&w=800",
-    category: "Green Tea"
+    name: "Weight Loss Tea",
+    image: "https://res.cloudinary.com/dnfbik3if/image/upload/v1760022460/Untitled_design_10_mbhvp9.jpg",
+    price: 14.99,
+    category: "Wellness Tea",
+    shortDescription: "A tantalizing blend to help you embrace a healthier lifestyle with every flavorful cup.",
+    details: "Introducing our irresistible Weight Loss Tea, a tantalizing blend of Green Tea, Cinnamon, and Hibiscus. Each sip of the tea helps you shed unwanted pounds naturally.",
+    ingredients: ["Green Tea", "Cinnamon", "Hibiscus"],
+    howToUse: "Pour boiled water over a tea bag and allow to steep for 5 minutes. Allow a longer steeping time for a strong flavor. If you are pregnant, please consult your doctor before consuming."
   },
   {
     id: 2,
-    name: "Black Tea Premium",
-    description: "Full-bodied Ceylon black tea with a smooth, malty taste. Perfect for morning refreshment.",
-    price: 10.99,
-    image: "https://images.pexels.com/photos/1410236/pexels-photo-1410236.jpeg?auto=compress&cs=tinysrgb&w=800",
-    category: "Black Tea"
+    name: "Digestion Tea",
+    image: "https://res.cloudinary.com/dnfbik3if/image/upload/v1760022799/Untitled_design_1_upggii.jpg",
+    price: 12.99,
+    category: "Herbal Tea",
+    shortDescription: "Revitalize your digestive system with a soothing blend that leaves you feeling refreshed and rejuvenated.",
+    details: "Revitalize your digestive system with our soothing Digestion Tea made with a blend of peppermint, fennel, and ginger. Experience the natural synergy of these ingredients as they gently calm and support your digestive tract.",
+    ingredients: ["Peppermint", "Fennel", "Ginger"],
+    howToUse: "Pour boiled water over a tea bag and allow to steep for 5 minutes. Allow a longer steeping time for a strong flavor. If you are pregnant, please consult your doctor before consuming herbal teas."
   },
   {
     id: 3,
-    name: "White Tea Delight",
-    description: "Delicate white tea with subtle sweetness. Handpicked from the finest tea gardens.",
-    price: 15.99,
-    image: "https://images.pexels.com/photos/1417945/pexels-photo-1417945.jpeg?auto=compress&cs=tinysrgb&w=800",
-    category: "White Tea"
+    name: "Tropical Relaxation Tea",
+    image: "https://res.cloudinary.com/dnfbik3if/image/upload/v1760022803/Untitled_design_2_khadtu.jpg",
+    price: 13.99,
+    category: "Black Tea Blend",
+    shortDescription: "Discover tranquility in every sip with this refreshing escape to tropical bliss.",
+    details: "Blending Ceylon black tea, lemongrass, and ginger, it's a refreshing escape to tropical bliss. Discover tranquility in every sip with our Tropical Relaxation Tea.",
+    ingredients: ["Ceylon black tea", "Ginger", "Lemongrass"],
+    howToUse: "Pour boiled water over a tea bag and allow to steep for 5 minutes. Allow a longer steeping time for a strong flavor. If you are pregnant, please consult your doctor before consuming."
   },
   {
     id: 4,
-    name: "Chamomile Herbal",
-    description: "Soothing chamomile blend for relaxation. Perfect for evening tea time.",
+    name: "Mint Green Tea",
+    image: "https://res.cloudinary.com/dnfbik3if/image/upload/v1760022810/Untitled_design_qj7gbi.jpg",
     price: 11.99,
-    image: "https://images.pexels.com/photos/6670774/pexels-photo-6670774.jpeg?auto=compress&cs=tinysrgb&w=800",
-    category: "Herbal Tea"
-  },
-  {
-    id: 5,
-    name: "Earl Grey Classic",
-    description: "Traditional Earl Grey with bergamot essence. A timeless classic blend.",
-    price: 13.99,
-    image: "https://images.pexels.com/photos/1638281/pexels-photo-1638281.jpeg?auto=compress&cs=tinysrgb&w=800",
-    category: "Black Tea"
-  },
-  {
-    id: 6,
-    name: "Jasmine Green",
-    description: "Green tea infused with jasmine flowers. Aromatic and refreshing.",
-    price: 14.99,
-    image: "https://images.pexels.com/photos/5591663/pexels-photo-5591663.jpeg?auto=compress&cs=tinysrgb&w=800",
-    category: "Green Tea"
-  },
-  {
-    id: 7,
-    name: "Peppermint Fresh",
-    description: "Cooling peppermint tea for digestive wellness. 100% natural ingredients.",
-    price: 9.99,
-    image: "https://images.pexels.com/photos/4021983/pexels-photo-4021983.jpeg?auto=compress&cs=tinysrgb&w=800",
-    category: "Herbal Tea"
-  },
-  {
-    id: 8,
-    name: "Oolong Special",
-    description: "Semi-oxidized oolong tea with complex flavor profile. For true tea connoisseurs.",
-    price: 16.99,
-    image: "https://images.pexels.com/photos/5946619/pexels-photo-5946619.jpeg?auto=compress&cs=tinysrgb&w=800",
-    category: "Oolong Tea"
-  },
-  {
-    id: 9,
-    name: "Lemon Ginger",
-    description: "Zesty lemon and spicy ginger blend. Energizing and immunity boosting.",
-    price: 11.99,
-    image: "https://images.pexels.com/photos/4021975/pexels-photo-4021975.jpeg?auto=compress&cs=tinysrgb&w=800",
-    category: "Herbal Tea"
+    category: "Green Tea",
+    shortDescription: "A refreshing and flavorful blend that offers a multitude of health benefits.",
+    details: "Ancient Nutra's Ceylon Green Tea infused with Mint is a refreshing blend that helps to reduce stress, aid in digestion, and promote better sleep. It can be enjoyed hot or cold.",
+    ingredients: ["100% Mint", "Green Tea"],
+    howToUse: "Steep a tea bag in hot water for 3-5 minutes. For iced tea, steep in hot water, then pour over ice. Add lemon or honey for extra flavor."
   }
 ];

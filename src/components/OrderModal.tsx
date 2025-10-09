@@ -9,7 +9,7 @@ interface OrderModalProps {
 
 export default function OrderModal({ product, onClose }: OrderModalProps) {
   const [quantity, setQuantity] = useState(1);
-  const phoneNumber = "94761486871";
+  const phoneNumber = "94703862650";
 
   useEffect(() => {
     const handleEsc = (event: KeyboardEvent) => {
@@ -71,7 +71,7 @@ export default function OrderModal({ product, onClose }: OrderModalProps) {
           </button>
           
           <h3 className="text-2xl font-bold text-gray-800 mb-2">{product.name}</h3>
-          <p className="text-gray-600 mb-4">{product.description}</p>
+          {/* <p className="text-gray-600 mb-4">{product.description}</p> */}
       {/* --- CHANGES END HERE (rest of the code is the same) --- */}
 
           <div className="flex items-center justify-between mb-6 pb-4 border-b">

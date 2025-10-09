@@ -145,7 +145,7 @@ export default function Home({ onNavigate }: HomeProps) {
                 </div>
                 <div className="p-6">
                   <h3 className="text-2xl font-bold text-gray-800 mb-3">{product.name}</h3>
-                  <p className="text-gray-600 mb-4 line-clamp-2">{product.description}</p>
+                  {/* <p className="text-gray-600 mb-4 line-clamp-2">{product.description}</p> */}
                   <div className="flex items-center justify-between">
                     <span className="text-sm font-semibold text-green-700 bg-green-50 px-3 py-1 rounded-full">
                       {product.category}

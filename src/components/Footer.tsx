@@ -1,4 +1,5 @@
-import { Leaf, Mail, MapPin, Phone } from 'lucide-react';
+import { Mail, MapPin, Phone } from 'lucide-react';
+import logo from "../public/logo2.png";
 
 export default function Footer() {
   return (
@@ -7,8 +8,10 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           <div>
             <div className="flex items-center space-x-2 mb-4">
-              <Leaf className="w-8 h-8 text-green-300" />
-              <h3 className="text-2xl font-bold font-serif">Ceylon Tea</h3>
+                 <div className={`bg-white   rounded-full shadow-lg group-hover:scale-110 transition-transform mx-2`}>
+              <img src={logo} className='w-16 h-16 object-cover p-1'></img>
+            </div>
+              <h3 className="text-2xl font-bold font-serif">Calico Nature Ceylon</h3>
             </div>
             <p className="text-green-200 leading-relaxed">
               Bringing you the finest Ceylon tea from the misty highlands of Sri Lanka since 1985.
@@ -21,13 +24,13 @@ export default function Footer() {
               <div className="flex items-start space-x-3">
                 <Phone className="w-5 h-5 text-green-400 mt-1 flex-shrink-0" />
                 <div>
-                  <p className="text-green-100">+94 </p>
-                  <p className="text-green-100">+94 761486871</p>
+                  <p className="text-green-100">+94 0783592888</p>
+                  <p className="text-green-100">+94 0703862650</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3">
                 <Mail className="w-5 h-5 text-green-400 mt-1 flex-shrink-0" />
-                <p className="text-green-100">info@ceylontea.lk</p>
+                <p className="text-green-100">caliconatureceylon.lk</p>
               </div>
             </div>
           </div>
@@ -52,7 +55,7 @@ export default function Footer() {
     
     {/* Copyright Notice */}
     <p className="text-green-300 text-sm text-center md:text-left">
-      © 2025 Ceylon Tea Collection. All rights reserved.
+      © 2025 Calico Nature Ceylon. All rights reserved.
     </p>
     
     {/* Social Links or Policy Links */}

@@ -1,6 +1,6 @@
-import { Leaf, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { useEffect, useState } from 'react';
-
+import logo from "../public/logo2.png";
 interface NavbarProps {
   currentPage: string;
   onNavigate: (page: string) => void;
@@ -54,11 +54,11 @@ export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
             onClick={() => onNavigate('home')}
           >
             {/* ✨ Updated logo background to be consistently white for better contrast */}
-            <div className={`bg-white p-2 rounded-full shadow-lg group-hover:scale-110 transition-transform`}>
-              <Leaf className={`w-8 h-8 text-green-700`} />
+            <div className={`bg-white   rounded-full shadow-lg group-hover:scale-110 transition-transform`}>
+              <img src={logo} className='w-16 h-16 object-cover p-1'></img>
             </div>
             <div>
-              <h1 className={`text-2xl font-bold font-serif transition-colors duration-300 ${logoColor}`}>Ceylon Tea</h1>
+              <h1 className={`text-2xl font-bold font-serif transition-colors duration-300 ${logoColor}`}>Calico Nature Ceylon</h1>
               <p className={`text-xs transition-colors duration-300 ${logoSubtitleColor}`}>Pure & Natural</p>
             </div>
           </div>

@@ -181,8 +181,8 @@ export default function About() {
         <Phone className="w-12 h-12 mx-auto mb-4 text-amber-400" />
         <h3 className="text-xl font-bold mb-3 text-white">Call Us</h3>
         <p className="text-gray-300 leading-relaxed">
-          +94 0761486871<br />
-          +94 77 890 1234<br />
+          +94 761486871<br />
+          +94 778901234<br />
        
         </p>
       </div>
